@@ -1,0 +1,162 @@
+.bg1{
+    width: 100%;
+    height: 380px;
+    
+    background-image: url(https://frankyeah.github.io/Front-Enter/images/skill-tree-key.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.bg1word1{
+    font-size: 24px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    color: white;
+    background: rgb(128,128,128);
+    opacity: 0.7;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 120px;
+    padding-left: 10px;
+    line-height: 44px;
+}
+
+.bg2{
+    width: 100%;
+    height: 600px;
+    
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(https://frankyeah.github.io/Front-Enter/images/second-img.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg2Title{
+    width: 600px;
+}
+.bg2word1{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    text-align: center;
+}
+.bg2word2{
+    width: 18px;
+    border: 1px solid white;
+    padding: 0.5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bg2word3{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    text-align: center;
+}
+
+.bg3{
+    margin-bottom: 200px;
+}
+.bg3Block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.smile{
+    width: 140px;
+    height: 40px;
+}
+.style{
+    width: 100px;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    color: rgb(128,128,128);
+    border: 1px solid rgb(128,128,128);
+    padding: 2.5px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.HTML{
+    color: rgb(26, 216, 211);
+    border-color: rgb(26, 216, 211);
+    cursor: pointer;
+}
+.left{
+    background: url(https://frankyeah.github.io/Front-Enter/images/diagonal-line-gray.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right{
+    background: url(https://frankyeah.github.io/Front-Enter/images/diagonal-line-gray.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.line{
+    background: url(	https://frankyeah.github.io/Front-Enter/images/minus-symbol-gray.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.straight{
+    background: url(	https://frankyeah.github.io/Front-Enter/images/minus-symbol-gray.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sbys{
+    display: flex;
+}
+.space{
+    margin-right: 50px;
+}
+.lineSpace{
+    margin-right: 50px;
+}
+.lineSpace2{
+    margin-left: 80px;
+}
+.lineSpace3{
+    margin-right: 130px;
+}
+
+@media (max-width: 479px){
+    .bg1{
+        background-size: cover;
+    }
+    .bg2Title{
+        width: 300px;
+    }
+}

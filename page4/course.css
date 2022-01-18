@@ -1,0 +1,236 @@
+.container{
+    z-index: 2;
+    width: 750px;
+    height: 550px;
+    position: fixed;
+    background-position: center;   
+    /* overflow: hidden; */
+    display: none;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slideimg{
+    /* float: left; */
+    width: 750px;
+    height: 550px;
+}
+.slideLeft{
+    width: 50px;
+    height: 50px;
+    background-image: url(https://frankyeah.github.io/Front-Enter/images/right-arrow.png);
+    background-size: cover;
+    position: fixed;
+    cursor: pointer;
+    left: -10%;
+    top: 50%;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+.slideRight{
+    width: 50px;
+    height: 50px;
+    background-image: url(https://frankyeah.github.io/Front-Enter/images/right-arrow.png);
+    background-size: cover;
+    position: fixed;
+    cursor: pointer;
+    right: -10%;
+    top: 50%;
+    z-index: 2;
+}
+.slidebg{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.bg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgc{
+    width: 100%;
+    height: 380px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/front-enter.appspot.com/o/images%2Frotate-img-1.jpg?alt=media&token=059f5677-409b-4fc1-a772-baf1dece5063);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg1word1{
+    font-size: 24px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background: rgb(128,128,128);
+    opacity: 0.7;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 240px;
+    padding-left: 10px;
+    line-height: 44px;
+    position: absolute;
+}
+.courseContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.courseImg{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgs{
+    width: 400px;
+    height: 266px;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1,1);
+    transition-duration: 1s;
+}
+.imgs:hover{
+    transform: scale(1.05,1.05);
+    transition: all 1s ease-in-out;
+}
+.courseText{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.courseH1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.courseh1{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(26,216,211);
+    text-align: left;
+    line-height: 8px;
+    letter-spacing: 3px;
+}
+.coursep{
+    width: 90%;
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(128,128,128);
+    text-align-last: left;
+    line-height: 28px;
+    letter-spacing: 3px;
+}
+.courseTidy{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.tidy{
+    font-size: 18px;
+    color: rgb(26, 216, 211);
+    text-align: center;
+    line-height: 8px;
+    letter-spacing: 3px;
+}
+.border{
+    width: 20px;
+    border-bottom: 1px solid rgb(26, 216, 211);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.text{
+    font-size: 16px;
+    color: rgb(26,216,211);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.text2{
+    margin-left: 70px;
+    font-size: 16px;
+    font-family: "Noto Sans TC", "華康黑體","微軟正黑體", arial, sans-serif;
+    color: rgb(128,128,128);
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+.border2{
+    width: 400px;
+    border-bottom: 1px solid rgb(128,128,128);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media (max-width: 479px){
+    .bg1{
+        background-size: cover;
+    }
+    .courseContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgrwd{
+        display: none;
+    }
+    .imgs{
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .courseText{
+        width: 80%;
+    }
+    .border2{
+        width: 350px;
+    }
+    .text2{
+        margin-left: 20px;
+    }
+    .bg1word1{
+        padding-left: 0px;
+    }
+    .container{
+        width: 300px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .slide{
+        width: 2100px;
+    }
+    .slideimg{
+        width: 300px;
+        height: 300px;
+        margin-top: 15px;
+    }
+    .slideLeft{
+        left: -12%;
+        top: 46%;
+        
+    }
+    .slideRight{
+        right: -12%;
+        top: 46%;
+    }
+    .courseTidy{
+        width: auto;
+    }
+}

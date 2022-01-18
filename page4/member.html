@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-Enter-會員中心</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="member.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="loading1" id="loading1"></div>
+    <div class="loading2" id="loading2">
+        <img class="frontlogo" id="frontlogo" src="https://frankyeah.github.io/Front-Enter/images/FE_logo-4.png" alt="frontlogo">
+    </div>
+    <div class="header" id="header">
+        <a href="index.html"><img class="logo" src="https://frankyeah.github.io/Front-Enter/images/FE_logo-4.png" alt="Front-Enter logo"></a>
+        <ul class="title">
+            <li><a class="font" href="explore.html">探索</a></li>
+            <li><a class="font" href="skillTree.html">技能樹</a></li>
+            <li id="titleLogin" style="display: none;" ><a class="font" id="log" href="#">登入</a></li>
+            <li id="memberText" style="display: block"><a class="font" href="./member.html">會員</a></li>
+            <li><a class="search"><img class="search" id="search" src="https://frankyeah.github.io/Front-Enter/images/FE_search_green.png" alt="搜尋"></a></li>
+        </ul>
+    </div>
+    <div class="hide" id="hide" style="display: none;">
+        <p class="searchText">SEARCH</p>
+        <input type="text" class="inputText" id="inputText">
+        <img class="hideSearch" id="hideSearch" src="https://frankyeah.github.io/Front-Enter/images/FE_search_green.png" alt="搜尋">
+        <img class="microphone" id="microphone" src="https://frankyeah.github.io/Front-Enter/images/microphone.svg" alt="麥克風">
+    </div>
+    <div class="hide2" id="hide2" style="display: none;"></div>
+    <div class="login" id="login"  style="display: none;">
+        <ul class="loginTitle">
+            <li><img class="loginLogo" src="https://frankyeah.github.io/Front-Enter/images/FE_logo-2.png" alt="login logo"></li>
+            <li><input type="text" class="inputMail" id="inputMail" placeholder="Email"><br><input type="text" class="inputCode" id="inputCode" placeholder="******"></li>
+            <li><p class="forgetCode" id="forgetCode">忘記密碼?</p></li>
+            <li><input type="button" class="registerbtn" id="registerbtn" value="註冊"><span><input type="button" id="loginbtn" class="loginbtn" value="登入"></span></li>
+            <li><input type="button" class="loginGmail" id="loginGmail" value="In With Gmail" id="loginGmail"></li>
+        </ul>
+    </div>
+    <div class="hide3" id="hide3" style="display: none;"></div>
+    <div>
+        <img class="testgo" id="testgo" src="https://frankyeah.github.io/Front-Enter/images/FE_test_go.png" alt="測驗">
+    </div>
+    <div class="test" id="test" style="display: none;"></div>
+    <div class="hide4" id="hide4" style="display: none;"></div>
+    <div class="bg1">
+        <div class="bgc"></div>
+        <p class="bg1word1" id="bg1word1">會員中心</p>
+    </div>
+    <div class="member-content">
+        <div class="member-selection">
+            <input type="button" class="member-button" id="memberProfile" value="個人資料">
+            <input type="button" class="member-button" id="memberCollect" value="收藏">
+            <input type="button" class="member-button" id="memberSignout" value="登出">
+        </div>
+        <ul class="member-info" id="memberInfo" style="display: block;" >
+            <li><img class="member-photo" id="memberPhoto" src="https://frankyeah.github.io/Front-Enter/images/profile-user-img.svg" alt=""></li>
+            <li class="member-flex"><p class="member-personal">姓名</p><input type="text" disabled placeholder="" name="" id="memberName"></li>
+            <li class="member-flex"><p class="member-personal">手機</p><input type="text" disabled placeholder="" name="" id="memberPhone"></li>
+            <li class="member-flex"><p class="member-personal">信箱</p><input type="text" disabled placeholder="" name="" id="memberEmail"></li>
+            <li class="member-flex-revise" id="memberRevise" style="display: block;"><input type="button" class="member-button" id="memberReviseButton" value="修改資料"></li>
+            <li class="member-flex-button" id="memberCheck" style="display: none;">
+                <input type="button" class="member-button" id="memberConfirm" value="確認">
+                <input type="button" class="member-button" id="memberCancel" value="取消">
+            </li>
+        </ul>
+        <div class="member-allcollect" id="memberCollectDiv" style="display: none;">
+        <div class="member-allcollect" id="memberCollectDivstyle">
+        <!-- <div class="member-collect" id="memberCollect">
+            <img class="member-classphoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiL6QZVHONxxMTgWynj6IFUn1J6kwFpKClLg&usqp=CAU" alt="">
+            <p class="member-classname">姓名</p>
+            <input type="button" class="member-delete" value="">
+        </div> -->
+        </div>
+        </div>
+    </div>
+    <div class="button">
+        <img class="top" id="totop" src="https://frankyeah.github.io/Front-Enter/images/FE_TOP.png" alt="top">
+    </div>
+    <div>
+        <ul class="footer">
+            <li class="contact">聯絡</li>
+            <li class="phone">M<span class="number">0917-218-567</span></li>
+            <li class="mail">E<span class="email">aaa24295234@gmail.com</span></li>
+            <li><a href="https://www.facebook.com/hongwei0522/"><img class="fb" src="https://frankyeah.github.io/Front-Enter/images/new-facebook-blue.svg" alt="facebook"></a>
+                <span><a href="https://line.me/ti/p/guSQElnN9A"><img class="line" src="https://frankyeah.github.io/Front-Enter/images/FE_line.png" alt="line"></span></a>
+            </li>
+        </ul>
+    </div>
+    <script src="member.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
